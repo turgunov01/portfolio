@@ -1,7 +1,8 @@
 <template>
     <div class="component-wrapper">
         <div class="components">
-            <nuxt-link class="draggable" to="/draggable">Draggable</nuxt-link>
+            <nuxt-link class="draggable" to="/dragging">Draggable</nuxt-link>
+            <nuxt-link class="draggable" to="/carousel">Carousel</nuxt-link>
         </div>
     </div>
 </template>
@@ -11,4 +12,12 @@
 
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped>
+.components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+</style>
