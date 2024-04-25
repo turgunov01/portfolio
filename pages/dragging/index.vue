@@ -5,6 +5,7 @@
             <div>Element with id: {{ element.id }}</div>
         </template>
     </draggable>
+
 </template>
 
 <script lang="ts" setup>
@@ -14,7 +15,7 @@ import draggable from 'vuedraggable';
 
 const components = defineComponent({
     components: {
-        draggable
+        draggable,
     }
 })
 
@@ -46,7 +47,8 @@ const items = ref(generateObjects())
     align-items: center;
     justify-content: center;
 
-    &.sortable-ghost, &.sortable-chosen {
+    &.sortable-ghost,
+    &.sortable-chosen {
         background: #fff;
         color: black;
     }

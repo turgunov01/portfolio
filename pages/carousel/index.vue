@@ -1,5 +1,4 @@
 <template>
-
     <div class="carousel-wrapper">
         <h1 class="title">Carousel</h1>
         <carousel :items-to-show="3" :wrap-around="true">
@@ -14,9 +13,7 @@
             </template>
         </carousel>
     </div>
-
     <CarouselComponent />
-    
 </template>
 
 <script lang="ts" setup>
@@ -45,10 +42,12 @@ const components = defineComponent({
     line-height: 4.4rem;
     font-weight: 700;
     opacity: 0.5 !important;
+    transition: 1s;
 }
 
 .carousel__slide--active {
     opacity: 1 !important;
+    font-size: 10rem !important;
 }
 
 .carousel-wrapper {
